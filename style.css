@@ -20,6 +20,7 @@ p {
 *::after,
 *::before {
   box-sizing: border-box;
+  transition: 0.3s;
 }
 
 h1 {
@@ -81,7 +82,7 @@ i {
 }
 
 .container {
-  width: 85%;
+  width: 75%;
   max-width: 1050px;
   margin-right: auto;
   margin-left: auto;
@@ -111,6 +112,10 @@ canvas {
   gap: 2.5rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 .project-item {
   display: flex;
   flex-direction: column;
@@ -120,6 +125,16 @@ canvas {
   background-color: rgb(239, 239, 239);
   border-radius: 33px;
   background-repeat: repeat;
+  color: black;
+  text-decoration: none;
+}
+
+.project-name {
+  text-decoration: none;
+}
+
+.project-item:hover {
+  filter: brightness(80%);
 }
 
 .project-item#anibin {
@@ -130,6 +145,34 @@ canvas {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 5rem;
+}
+
+.track-display {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.track-name {
+  margin: 0;
+  font-weight: 600;
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+}
+
+.track-artist {
+  margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    width: 85%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -149,6 +192,14 @@ canvas {
 
   h3 {
     font-size: 40px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .track-name {
+    font-size: 16px;
   }
 
   .subtitle {
