@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <script src="https://kit.fontawesome.com/6d68bfffd5.js" crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vite App</title>
 </head>
@@ -11,13 +12,20 @@
 <body>
   <div id="app">
     <div class="container">
-      <div class="text-center" id="hero">
+      <div class="flex text-center" id="hero">
         <h1>Anirudh Mishra</h1>
         <p class="subtitle">Web Developer, 3D Graphics Designer and ML Engineer.</p>
+        <div class="socials">
+          <i class="fa-brands fa-github"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa fa-envelope"></i>
+        </div>
+        <div class="mx-auto" id="donut-scene"></div>
       </div>
     </div>
   </div>
   <script type="module" src="/main.js"></script>
+  <script type="module" src="/donut.js"></script>
 </body>
 
 </html>

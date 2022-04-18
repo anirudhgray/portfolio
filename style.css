@@ -8,7 +8,11 @@
 }
 
 html,
-body {
+body,
+h1,
+h2,
+h3,
+p {
   margin: 0;
 }
 
@@ -27,10 +31,32 @@ h1 {
   font-size: 30px;
   font-weight: 300;
   color: #9D9D9D;
+  margin-top: 2rem;
+}
+
+i {
+  font-size: 30px;
 }
 
 .text-center {
   text-align: center;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.25rem;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container {
@@ -38,12 +64,43 @@ h1 {
   max-width: 1050px;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+#donut-scene {
+  height: 270px;
+  width: 90%;
+  max-width: 270px;
+  margin-top: 4rem;
+}
+
+canvas {
+  height: 100%;
+  width: 100%;
 }
 
 @media screen and (max-width: 600px) {
   .container {
-    width: 100%
+    width: 95%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  .subtitle {
+    font-size: 24px;
+    margin-top: 1.25rem;
+  }
+
+  .socials {
+    gap: 2rem;
+  }
+
+  #donut-scene {
+    margin-top: 2.75rem;
   }
 }
