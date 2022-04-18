@@ -4,9 +4,10 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <script src="https://kit.fontawesome.com/6d68bfffd5.js" crossorigin="anonymous"></script>
+  <script defer src="https://kit.fontawesome.com/6d68bfffd5.js" crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anirudh Mishra</title>
+  <meta name="description" content="Web Developer, 3D Graphics Designer and ML Engineer.">
+  <title>Anirudh Mishra — Developer</title>
 </head>
 
 <body>
@@ -16,10 +17,12 @@
         <h1>Anirudh Mishra</h1>
         <p class="subtitle">Web Developer, 3D Graphics Designer and ML Engineer.</p>
         <div class="socials">
-          <a target="_blank" href="https://github.com/anirudhgray"><i class="fa-brands fa-github"></i></a>
-          <a target="_blank" href="https://www.linkedin.com/in/anirudh-mishra/"><i
+          <a aria-label="my github" target="_blank" href="https://github.com/anirudhgray"><i
+              class="fa-brands fa-github"></i></a>
+          <a aria-label="my linkedin" target="_blank" href="https://www.linkedin.com/in/anirudh-mishra/"><i
               class="fa-brands fa-linkedin"></i></a>
-          <a target="_blank" href="mailto:anirudh04mishra@gmail.com"><i class="fa fa-envelope"></i></a>
+          <a aria-label="my email" target="_blank" href="mailto:anirudh04mishra@gmail.com"><i
+              class="fa fa-envelope"></i></a>
         </div>
         <div class="mx-auto" id="donut-scene"></div>
       </div>
@@ -53,9 +56,9 @@
       <div class="spotify">
         <i class="h2 fa-brands fa-spotify"></i>
         <div>
-          <p id="track-status" class="text-center">Now Playing</p>
+          <p id="track-status" class="text-center">Listening now</p>
           <div class="track-display">
-            <img id="track-img" src="#">
+            <img alt="track photo" width="64px" height="64px" id="track-img" src="#">
             <div class="track-info">
               <a href="#" class="track-name" id="track-name">The Ripple</a>
               <p class="track-artist" id="track-artist">Grizfolk</p>
@@ -65,8 +68,8 @@
       </div>
     </div>
   </div>
-  <script type="module" src="/main.js"></script>
-  <script type="module" src="/donut.js"></script>
+  <script defer type="module" src="/main.js"></script>
+  <script defer type="module" src="/donut.js"></script>
 </body>
 
 </html>

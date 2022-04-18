@@ -51,7 +51,7 @@ p {
 .subtitle {
   font-size: 30px;
   font-weight: 300;
-  color: #9D9D9D;
+  color: #767676;
   margin-top: 2rem;
   text-align: center;
 }
@@ -117,6 +117,10 @@ a {
   color: black;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 .project-item {
   display: flex;
   flex-direction: column;
@@ -135,7 +139,7 @@ a {
 }
 
 .project-item:hover {
-  filter: brightness(80%);
+  filter: brightness(95%);
 }
 
 .project-item#anibin {
@@ -173,7 +177,7 @@ a {
   font-weight: 600;
   font-size: 18px;
   text-decoration: none;
-  color: black;
+  color: #000;
 }
 
 .track-artist {
