@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const timestamp = latest.date.uts
     const uts = dayjs.unix(timestamp)
     const timeAgo = dayjs(uts).fromNow()
-    document.querySelector('#track-status').textContent = "Playing " + timeAgo
+    document.querySelector('#track-status').textContent = timeAgo
   }
   
   document.querySelector('#track-img').src = image
