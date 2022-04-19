@@ -73,6 +73,9 @@ const tick = () => {
   // Update controls
   controls.update();
 
+  cube.rotation.x +=0.001
+  cube.rotation.y +=0.001
+
   // Render
   renderer.render(scene, camera);
 
