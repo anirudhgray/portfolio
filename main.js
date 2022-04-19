@@ -4,7 +4,7 @@ import dayjs from 'dayjs'
 import relativeTime from 'dayjs/plugin/relativeTime'
 dayjs.extend(relativeTime)
 
-document.addEventListener('DOMContentLoaded', async () => {
+const getMusic = async () => {
   const res = await axios.get("https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=dorianvalerian&api_key=a4c49534bcda7af16324bec5f1415a50&format=json")
   const data = res.data
   // console.log(data.recenttracks.track[0])
@@ -29,4 +29,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   document.querySelector('#track-name').textContent = track
   document.querySelector('#track-name').setAttribute('href', url)
   document.querySelector('#track-artist').textContent = artist
-});
+}
+
+document.addEventListener('DOMContentLoaded', getMusic());
+
+setInterval(getMusic, 30000);
